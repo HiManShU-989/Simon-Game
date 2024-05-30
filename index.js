@@ -5,6 +5,7 @@ var currentLevel = 0;
 var started = false;
 $(document).keydown(function () {
     if (!started) {
+         $("#level-title").text("Level " + currentLevel);
         nextSequence();
         started = true;
     }
