@@ -4,7 +4,7 @@ var buttonColours = ["red", "blue", "green", "yellow"];
 var currentLevel = 0;
 var started = false;
 $(document).keydown(function () {
-    if (!started) {
+    if (started) {
         nextSequence();
         started = true;
     }
